@@ -43,6 +43,7 @@
     "overrides": {
       "@account-kit/infra": "4.35.1",
       "@account-kit/smart-contracts": "4.35.1",
+      "@account-kit/signer": "4.35.1",
       "viem": "2.21.35"
     }
   }
