@@ -41,11 +41,6 @@
   },
   "pnpm": {
     "overrides": {
-      "@account-kit/core": "4.35.1",
-      "@account-kit/infra": "4.35.1",
-      "@account-kit/react": "4.35.1",
-      "@account-kit/smart-contracts": "4.35.1",
-      "@account-kit/signer": "4.35.1",
       "viem": "^2.21.0"
     }
   }

@@ -5,11 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@account-kit/core': 4.35.1
-  '@account-kit/infra': 4.35.1
-  '@account-kit/react': 4.35.1
-  '@account-kit/smart-contracts': 4.35.1
-  '@account-kit/signer': 4.35.1
   viem: ^2.21.0
 
 importers:
@@ -136,6 +131,11 @@ packages:
 
   '@account-kit/signer@4.35.1':
     resolution: {integrity: sha512-sbA6zL7mcOgCktH9TClanmroCTojOYOFeYNaKXj0UPQFEu3wvbvPBg+XT47C7KNf/5SV5Tdu09NWP0JTaD5f4Q==}
+    peerDependencies:
+      viem: ^2.21.0
+
+  '@account-kit/signer@4.86.0':
+    resolution: {integrity: sha512-fOhMf0cELfgeVVHxauYXhMOxmvlajVDyCI7XebgamrW653bH9CUrdSCer/1EGfT0hjGXN92o0+UuXdZYQPfViA==}
     peerDependencies:
       viem: ^2.21.0
 
@@ -1376,6 +1376,9 @@ packages:
     resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
     engines: {node: ^14.21.3 || >=16}
 
+  '@noble/secp256k1@2.3.0':
+    resolution: {integrity: sha512-0TQed2gcBbIrh7Ccyw+y/uZQvbJwm7Ao4scBUxqpBCcsOlZG0O4KGfjtNAy/li4W8n1xt3dxrwJ0beZ2h2G6Kw==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1391,6 +1394,9 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@openzeppelin/contracts@4.9.6':
+    resolution: {integrity: sha512-xSmezSupL+y9VkHZJGDoCBpmnB2ogM13ccaYDWqJTfS3dbuHkgjuwDFUmaFauBCboQMGB/S5UqUl2y54X99BmA==}
 
   '@paulmillr/qr@0.2.1':
     resolution: {integrity: sha512-IHnV6A+zxU7XwmKFinmYjUcwlyK9+xkG3/s9KcQhI9BjQKycrJ1JRO+FbNYPwZiPKW3je/DR0k7w8/gLa5eaxQ==}
@@ -2060,12 +2066,20 @@ packages:
     resolution: {integrity: sha512-KXvf2yV3OkSrZYEnHSgOwy2XS7Q4+XNwRkgRhDNsiYvgz8KNGLbqXg0/aAlkTIUT7NYODZ3iaGMml0DtyzGeDQ==}
     engines: {node: '>=18.0.0'}
 
+  '@turnkey/api-key-stamper@0.4.7':
+    resolution: {integrity: sha512-/0/kW7v+uCnmHnGMoHSXn4Vb/MxLAIivGxX/T0L4vVoIiJalQmqcCtgiWnPWZDiJNGjMKp+jd/8j6VXgbVVozg==}
+    engines: {node: '>=18.0.0'}
+
   '@turnkey/api-key-stamper@0.6.2':
     resolution: {integrity: sha512-FwTqQk8y2gr0s7yJOduM2ZS/y/WzXPAPcchV2vcfSpcpe3E6opRRrrkOrf+m+pDWkSE91bqgehaBIDxeZLnPcQ==}
     engines: {node: '>=18.0.0'}
 
   '@turnkey/crypto@0.2.1':
     resolution: {integrity: sha512-+iRRe7Uo1G1gnE9H9VndCMOpUZ/LKXC7Zj3ouJFNQQXt5Tl0jrRnTL3k4/1jR09phcezBRGRWeannN9cmWW+Pw==}
+    engines: {node: '>=18.0.0'}
+
+  '@turnkey/crypto@2.6.0':
+    resolution: {integrity: sha512-v7+B1RDg0qhRKNqynthvi1TUaNd5I4KoJL6CjrUmr2pWQ3LTvoeifJ7b9NjgkBnYMf4M8UV4gupguIH7ZaA7vA==}
     engines: {node: '>=18.0.0'}
 
   '@turnkey/crypto@2.8.11':
@@ -2080,6 +2094,10 @@ packages:
     resolution: {integrity: sha512-ptLgcpWVt34KTPx0omF2QLJrosW6I//clCJ4G2+yngYFCzrdR0yBchV/BOcfME67mK1v3MmauyXl9AAnQTmB4Q==}
     engines: {node: '>=18.0.0'}
 
+  '@turnkey/encoding@0.5.0':
+    resolution: {integrity: sha512-nRlKRQa6B5/xltGUKN1iKo4h4YC/0iFz0fAuFFZevc+YGDj7ddAP/3HkWmVvLmdoicUgs9rxvWbLRlgqPkbwzQ==}
+    engines: {node: '>=18.0.0'}
+
   '@turnkey/encoding@0.6.0':
     resolution: {integrity: sha512-IC8qXvy36+iGAeiaVIuJvB35uU2Ld/RAWI/DRTKS+ttBej0GXhOn48Ouu5mlca4jt8ZEuwXmDVv74A8uBQclsA==}
     engines: {node: '>=18.0.0'}
@@ -2091,6 +2109,10 @@ packages:
   '@turnkey/http@2.22.0':
     resolution: {integrity: sha512-nkzSIiur68PDEXh0E6fPpgrev0qeMfnVjeh/nWePZpS6TwJ7NGw1i4WRqZ1VkQ+ODmCD2ztKMzUhii9b4pzURg==}
     engines: {node: '>=16.0.0'}
+
+  '@turnkey/http@3.11.0':
+    resolution: {integrity: sha512-9HetrzUbXoo/CaXzeIlu+wg0lKUYTXPckrwT+95xb0VVLo2vS9WMWvc8Qhi138HnZxFzeqaeJ7/r8gFBV04HrQ==}
+    engines: {node: '>=18.0.0'}
 
   '@turnkey/http@3.17.0':
     resolution: {integrity: sha512-z6weSGNfhvib1ajFVdiw8fAB79Wo6ZFvwf8Izzqr2oO/2yyE4R5YoHuNf0lsWmJIr2Vz3/VL/S9wsf3WE6ameA==}
@@ -2104,6 +2126,18 @@ packages:
     resolution: {integrity: sha512-14IPfloVCV3ngoxsy3KoEUbEtYYxPU5H6T4WcNzY8Z67A1NJZfipk6pTaN5h3efkUm208G2TvDd63sZOdbyuxQ==}
     engines: {node: '>=18.0.0'}
 
+  '@turnkey/iframe-stamper@2.11.0':
+    resolution: {integrity: sha512-Iyf4W4S4Hx/RVsXl07PkRTh3g5Ca+vpN6SdUbRy8lt9IQZAJel/vxAk9XMyB7utX9TJx+icSjNYHvC0XGqJ47A==}
+    engines: {node: '>=18.0.0'}
+
+  '@turnkey/iframe-stamper@2.5.0':
+    resolution: {integrity: sha512-XjntbA5CNjxGRH+loceAlVLL9PG9Q4Y7p5zjBm4DeKclhD6lpUl9h8INArMEXIFbfLwLjjS6Q+SmQG4BHvNY6A==}
+    engines: {node: '>=18.0.0'}
+
+  '@turnkey/indexed-db-stamper@1.1.1':
+    resolution: {integrity: sha512-pKEMTCTg6Kn76nvYu3vq3HfsdkZ7BmO5MSrXqk7K2TJ4griL/oEzIhlSNAnihpohIRTmIkSCxOAgyIe43oB+Cg==}
+    engines: {node: '>=18.0.0'}
+
   '@turnkey/react-native-passkey-stamper@1.2.10':
     resolution: {integrity: sha512-gezOkQSYff1xTsdjDEXMBZs/hI7rPJ1D07QTOrdRPHOBI6dB38RpXOfQB7HuezG6Muzo1JWaxtwtpJCIVVPpYA==}
     engines: {node: '>=18.0.0'}
@@ -2112,13 +2146,31 @@ packages:
     resolution: {integrity: sha512-0MtdC20DrmB9WiiPUwYu/o7PzcSspojbjOF9TKFEsJIZpo3yQK7mQZyPhovAVXCxk7KP3SqS9qcDdpAe5/oMzA==}
     engines: {node: '>=18.0.0'}
 
+  '@turnkey/sdk-browser@5.9.0':
+    resolution: {integrity: sha512-1U5W4TwvLH8rdyN2m6EZ8EvX1f6gfwqD3lS5sTEyLcMtracFTmCKDSvu8wQ+ZhsznNTw3/zpY3VBhvAyzX8pgg==}
+    engines: {node: '>=18.0.0'}
+
   '@turnkey/sdk-server@1.3.0':
     resolution: {integrity: sha512-uChLAU0EYtnSmg4qZUwGEi+HOY9Xqrczrfbggzq1dO4CAsTxG5mUfTSIR742n1LAZMlGGdJlvqcADcbLBZMApA==}
+    engines: {node: '>=18.0.0'}
+
+  '@turnkey/sdk-server@4.8.0':
+    resolution: {integrity: sha512-EjHDA0RyLTvoY36umRyvwKQmeauYzoScLwF4Bq67OrpLBxNjydLz5e+mPoOJx8+ZkQV6/79pBZ6LYb0aFsm6oA==}
     engines: {node: '>=18.0.0'}
 
   '@turnkey/sdk-types@0.12.0':
     resolution: {integrity: sha512-3FunPW4seCiZIXKMOJbyIa0eylIL5JKycI/qb7Kj2dJPGGIMt9lwd0lEc1+ibZzrP2tLex6OzKZSIXWPsBsOVQ==}
     engines: {node: '>=18.0.0'}
+
+  '@turnkey/sdk-types@0.3.0':
+    resolution: {integrity: sha512-w9WLK8rMBLMIQNtaEriW2mQRuRxWu5GCOZatReaB5FRrtUFJroXjB3V8C+wUER02w3znyZzklQGPL1P32n6iuA==}
+    engines: {node: '>=18.0.0'}
+
+  '@turnkey/viem@0.13.1':
+    resolution: {integrity: sha512-0W3sp7BBD2nSqHfNrfjUByLm4l53ciAN+9Gjf8K9KB6d3wmLgnaw1cf40qx7TinrppFvevEi/B8VgcisfCu5KA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      viem: ^2.21.0
 
   '@turnkey/viem@0.4.31':
     resolution: {integrity: sha512-yHq3+5u63diNYny2fG+i43mtSv0LtSEgOE64q0Kdq6D42nU8lbTstU+0dY939a/lXmrZOGYzSUJmU/coWg4Whg==}
@@ -2126,12 +2178,19 @@ packages:
     peerDependencies:
       viem: ^2.21.0
 
+  '@turnkey/wallet-stamper@1.0.9':
+    resolution: {integrity: sha512-BvqmewbwjdQwwDy1o5GY240jinwoIU6pX7uXIxeAKEbhXUlAKlbESW5U1MLnAZj4dK1kNdsr1kvFW53vq5Dsdw==}
+
   '@turnkey/webauthn-stamper@0.4.3':
     resolution: {integrity: sha512-hJuIpwny44TOrkFJiK8uA29RRO1A9xJK3KbN4PWqBxTLh1r7ntkl3zslc/qAkgnw6f+OREQbhQGoYkTdIX+7QA==}
     engines: {node: '>=18.0.0'}
 
   '@turnkey/webauthn-stamper@0.5.0':
     resolution: {integrity: sha512-iUbTUwD4f4ibdLy5PWWb7ITEz4S4VAP9/mNjFhoRY3cKVVTDfmykrVTKjPOIHWzDgAmLtgrLvySIIC9ZBVENBw==}
+    engines: {node: '>=18.0.0'}
+
+  '@turnkey/webauthn-stamper@0.5.1':
+    resolution: {integrity: sha512-eBwceTStSSettBQsLo3X5eJEarcK9f20cGUdi6jOesXOP86iYEIgR4+aH2qyCQ3eaovj+Hl44UGngXueIm/tKg==}
     engines: {node: '>=18.0.0'}
 
   '@turnkey/webauthn-stamper@0.6.0':
@@ -6393,7 +6452,7 @@ snapshots:
     dependencies:
       '@account-kit/infra': 4.35.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
       '@account-kit/logging': 4.86.0
-      '@account-kit/react-native-signer': 4.86.0(0c90c98b5d48a4427352ddf791684579)
+      '@account-kit/react-native-signer': 4.86.0(3b029d0e086145f90eae9d6805e58f84)
       '@account-kit/signer': 4.35.1(@babel/core@7.29.0)(@babel/preset-env@7.29.0(@babel/core@7.29.0))(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
       '@account-kit/smart-contracts': 4.35.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
       '@solana/web3.js': 1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)
@@ -6447,10 +6506,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@account-kit/react-native-signer@4.86.0(0c90c98b5d48a4427352ddf791684579)':
+  '@account-kit/react-native-signer@4.86.0(3b029d0e086145f90eae9d6805e58f84)':
     dependencies:
       '@aa-sdk/core': 4.86.0(typescript@5.9.3)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
-      '@account-kit/signer': 4.35.1(@babel/core@7.29.0)(@babel/preset-env@7.29.0(@babel/core@7.29.0))(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
+      '@account-kit/signer': 4.86.0(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
       '@turnkey/crypto': 2.8.11
       '@turnkey/react-native-passkey-stamper': 1.2.10(react-native@0.84.1(@babel/core@7.29.0)(@react-native-community/cli@13.6.4(bufferutil@4.1.0)(utf-8-validate@6.0.6))(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@6.0.6))(react@18.3.1)
       react: 18.3.1
@@ -6463,13 +6522,10 @@ snapshots:
       viem: 2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
       zod: 3.25.76
     transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/preset-env'
       - '@types/react'
       - bufferutil
       - encoding
       - immer
-      - supports-color
       - typescript
       - use-sync-external-store
       - utf-8-validate
@@ -6558,6 +6614,33 @@ snapshots:
       - immer
       - react
       - supports-color
+      - typescript
+      - use-sync-external-store
+      - utf-8-validate
+
+  '@account-kit/signer@4.86.0(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))':
+    dependencies:
+      '@aa-sdk/core': 4.86.0(typescript@5.9.3)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))
+      '@account-kit/logging': 4.86.0
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.7.1
+      '@noble/secp256k1': 2.3.0
+      '@solana/web3.js': 1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)
+      '@turnkey/http': 3.17.0
+      '@turnkey/iframe-stamper': 2.11.0
+      '@turnkey/viem': 0.13.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))(zod@3.25.76)
+      '@turnkey/webauthn-stamper': 0.4.3
+      bs58: 6.0.0
+      jwt-decode: 4.0.0
+      viem: 2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+      zod: 3.25.76
+      zustand: 5.0.11(@types/react@18.3.28)(react@18.3.1)(use-sync-external-store@1.4.0(react@18.3.1))
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - encoding
+      - immer
+      - react
       - typescript
       - use-sync-external-store
       - utf-8-validate
@@ -8372,6 +8455,8 @@ snapshots:
 
   '@noble/hashes@1.8.0': {}
 
+  '@noble/secp256k1@2.3.0': {}
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -8385,6 +8470,8 @@ snapshots:
       fastq: 1.20.1
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@openzeppelin/contracts@4.9.6': {}
 
   '@paulmillr/qr@0.2.1': {}
 
@@ -9798,6 +9885,12 @@ snapshots:
       '@turnkey/encoding': 0.4.0
       sha256-uint8array: 0.10.7
 
+  '@turnkey/api-key-stamper@0.4.7':
+    dependencies:
+      '@noble/curves': 1.9.7
+      '@turnkey/encoding': 0.5.0
+      sha256-uint8array: 0.10.7
+
   '@turnkey/api-key-stamper@0.6.2':
     dependencies:
       '@noble/curves': 1.9.7
@@ -9826,6 +9919,16 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  '@turnkey/crypto@2.6.0':
+    dependencies:
+      '@noble/ciphers': 1.3.0
+      '@noble/curves': 1.9.0
+      '@noble/hashes': 1.8.0
+      '@turnkey/encoding': 0.5.0
+      borsh: 2.0.0
+      bs58: 6.0.0
+      bs58check: 4.0.0
+
   '@turnkey/crypto@2.8.11':
     dependencies:
       '@noble/ciphers': 1.3.0
@@ -9840,6 +9943,8 @@ snapshots:
   '@turnkey/encoding@0.2.1': {}
 
   '@turnkey/encoding@0.4.0': {}
+
+  '@turnkey/encoding@0.5.0': {}
 
   '@turnkey/encoding@0.6.0':
     dependencies:
@@ -9864,6 +9969,15 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@turnkey/http@3.11.0':
+    dependencies:
+      '@turnkey/api-key-stamper': 0.4.7
+      '@turnkey/encoding': 0.5.0
+      '@turnkey/webauthn-stamper': 0.5.1
+      cross-fetch: 3.2.0
+    transitivePeerDependencies:
+      - encoding
+
   '@turnkey/http@3.17.0':
     dependencies:
       '@turnkey/api-key-stamper': 0.6.2
@@ -9876,6 +9990,15 @@ snapshots:
   '@turnkey/iframe-stamper@1.2.0': {}
 
   '@turnkey/iframe-stamper@2.0.0': {}
+
+  '@turnkey/iframe-stamper@2.11.0': {}
+
+  '@turnkey/iframe-stamper@2.5.0': {}
+
+  '@turnkey/indexed-db-stamper@1.1.1':
+    dependencies:
+      '@turnkey/api-key-stamper': 0.4.7
+      '@turnkey/encoding': 0.5.0
 
   '@turnkey/react-native-passkey-stamper@1.2.10(react-native@0.84.1(@babel/core@7.29.0)(@react-native-community/cli@13.6.4(bufferutil@4.1.0)(utf-8-validate@6.0.6))(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@6.0.6))(react@18.3.1)':
     dependencies:
@@ -9912,6 +10035,28 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  '@turnkey/sdk-browser@5.9.0(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)':
+    dependencies:
+      '@turnkey/api-key-stamper': 0.4.7
+      '@turnkey/crypto': 2.6.0
+      '@turnkey/encoding': 0.5.0
+      '@turnkey/http': 3.11.0
+      '@turnkey/iframe-stamper': 2.5.0
+      '@turnkey/indexed-db-stamper': 1.1.1
+      '@turnkey/sdk-types': 0.3.0
+      '@turnkey/wallet-stamper': 1.0.9(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+      '@turnkey/webauthn-stamper': 0.5.1
+      bs58check: 4.0.0
+      buffer: 6.0.3
+      cross-fetch: 3.2.0
+      hpke-js: 1.8.0
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - typescript
+      - utf-8-validate
+      - zod
+
   '@turnkey/sdk-server@1.3.0':
     dependencies:
       '@turnkey/api-key-stamper': 0.4.1
@@ -9922,7 +10067,40 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@turnkey/sdk-server@4.8.0(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)':
+    dependencies:
+      '@turnkey/api-key-stamper': 0.4.7
+      '@turnkey/http': 3.11.0
+      '@turnkey/wallet-stamper': 1.0.9(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+      buffer: 6.0.3
+      cross-fetch: 3.2.0
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - typescript
+      - utf-8-validate
+      - zod
+
   '@turnkey/sdk-types@0.12.0': {}
+
+  '@turnkey/sdk-types@0.3.0': {}
+
+  '@turnkey/viem@0.13.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))(zod@3.25.76)':
+    dependencies:
+      '@noble/curves': 1.8.0
+      '@openzeppelin/contracts': 4.9.6
+      '@turnkey/api-key-stamper': 0.4.7
+      '@turnkey/http': 3.11.0
+      '@turnkey/sdk-browser': 5.9.0(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+      '@turnkey/sdk-server': 4.8.0(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+      cross-fetch: 4.1.0
+      viem: 2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - typescript
+      - utf-8-validate
+      - zod
 
   '@turnkey/viem@0.4.31(@babel/core@7.29.0)(@babel/preset-env@7.29.0(@babel/core@7.29.0))(@types/react@18.3.28)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@6.0.6)(viem@2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76))':
     dependencies:
@@ -9943,12 +10121,28 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  '@turnkey/wallet-stamper@1.0.9(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)':
+    dependencies:
+      '@turnkey/crypto': 2.6.0
+      '@turnkey/encoding': 0.5.0
+    optionalDependencies:
+      viem: 2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+      - zod
+
   '@turnkey/webauthn-stamper@0.4.3':
     dependencies:
       '@noble/hashes': 1.8.0
       buffer: 6.0.3
 
   '@turnkey/webauthn-stamper@0.5.0':
+    dependencies:
+      sha256-uint8array: 0.10.7
+
+  '@turnkey/webauthn-stamper@0.5.1':
     dependencies:
       sha256-uint8array: 0.10.7
 
