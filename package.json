@@ -26,7 +26,7 @@
     "react-dom": "^18",
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "2.20.0",
+    "viem": "2.21.1",
     "wagmi": "2.15.4"
   },
   "devDependencies": {
@@ -46,7 +46,7 @@
       "@account-kit/react": "4.35.1",
       "@account-kit/smart-contracts": "4.35.1",
       "@account-kit/signer": "4.35.1",
-      "viem": "2.20.0"
+      "viem": "2.21.1"
     }
   }
 }
