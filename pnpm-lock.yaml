@@ -6,6 +6,9 @@ settings:
 
 overrides:
   viem: 2.21.0
+  '@account-kit/signer>viem': 2.21.0
+  '@account-kit/react>viem': 2.21.0
+  '@account-kit/core>viem': 2.21.0
 
 importers:
 
