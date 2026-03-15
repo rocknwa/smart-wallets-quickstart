@@ -10,7 +10,7 @@ overrides:
   '@account-kit/react': 4.35.1
   '@account-kit/smart-contracts': 4.35.1
   '@account-kit/signer': 4.35.1
-  viem: 2.21.1
+  viem: ^2.21.0
 
 importers:
 
@@ -62,7 +62,7 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.19(yaml@2.8.2))
       viem:
-        specifier: 2.21.1
+        specifier: ^2.21.0
         version: 2.21.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)(zod@3.25.76)
       wagmi:
         specifier: 2.15.4
@@ -98,18 +98,18 @@ packages:
   '@aa-sdk/core@4.86.0':
     resolution: {integrity: sha512-kemTAwa6uE6t0Q/of+SXRzljcpu5IvvjQQiqX+aGT1a0v1gVxaxSZnScK7sLc2xJxwgO1kMc90mqif3fsK46yA==}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
 
   '@account-kit/core@4.35.1':
     resolution: {integrity: sha512-zm+j4pRe9/Spmqgo1sHAgjP5ydzgjkYhPi674ApHdcwpSKTs0TTNV3toZjpZUNhExuxoDA+ACcCEu/e9OWb/IA==}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
       wagmi: ^2.12.7
 
   '@account-kit/infra@4.35.1':
     resolution: {integrity: sha512-1vgfaAWZjsU6P/t5Vb/g/KJn19bhZ5cfGXGIHuDKK4IsJbRnQjAERY8TFJNjP1lWQ+YzSXqGGuvxG3DcDSas7w==}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
 
   '@account-kit/logging@4.86.0':
     resolution: {integrity: sha512-/VyCxla3A9DPj4aRhfmh/l6JJkuoXur7RkUFetbQXDIGlYFxXa1YKfhy5QPyMww1oAJ5W7JeCfiiGBbSnpnw3w==}
@@ -131,18 +131,18 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
       tailwindcss: ^3.4.3
-      viem: 2.21.1
+      viem: ^2.21.0
       wagmi: ^2.12.7
 
   '@account-kit/signer@4.35.1':
     resolution: {integrity: sha512-sbA6zL7mcOgCktH9TClanmroCTojOYOFeYNaKXj0UPQFEu3wvbvPBg+XT47C7KNf/5SV5Tdu09NWP0JTaD5f4Q==}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
 
   '@account-kit/smart-contracts@4.35.1':
     resolution: {integrity: sha512-lj9p7JUMSWDzNNGJIBrBhyBP9QBheE9SvGueQ6IDjROT/o3ey9zK/ZVXlgM+0fvJBLiPy12ygcHBtxBdce2TbQ==}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
 
   '@adraffy/ens-normalize@1.10.0':
     resolution: {integrity: sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==}
@@ -1043,7 +1043,7 @@ packages:
   '@gemini-wallet/core@0.2.0':
     resolution: {integrity: sha512-vv9aozWnKrrPWQ3vIFcWk7yta4hQW1Ie0fsNNPeXnjAxkbXr2hqMagEptLuMxpEP2W3mnRu05VDNKzcvAuuZDw==}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -2124,7 +2124,7 @@ packages:
     resolution: {integrity: sha512-yHq3+5u63diNYny2fG+i43mtSv0LtSEgOE64q0Kdq6D42nU8lbTstU+0dY939a/lXmrZOGYzSUJmU/coWg4Whg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      viem: 2.21.1
+      viem: ^2.21.0
 
   '@turnkey/webauthn-stamper@0.4.3':
     resolution: {integrity: sha512-hJuIpwny44TOrkFJiK8uA29RRO1A9xJK3KbN4PWqBxTLh1r7ntkl3zslc/qAkgnw6f+OREQbhQGoYkTdIX+7QA==}
@@ -2372,7 +2372,7 @@ packages:
     peerDependencies:
       '@wagmi/core': 2.21.2
       typescript: '>=5.0.4'
-      viem: 2.21.1
+      viem: ^2.21.0
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -2382,7 +2382,7 @@ packages:
     peerDependencies:
       '@wagmi/core': 2.17.2
       typescript: '>=5.0.4'
-      viem: 2.21.1
+      viem: ^2.21.0
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -2392,7 +2392,7 @@ packages:
     peerDependencies:
       '@tanstack/query-core': '>=5.0.0'
       typescript: '>=5.0.4'
-      viem: 2.21.1
+      viem: ^2.21.0
     peerDependenciesMeta:
       '@tanstack/query-core':
         optional: true
@@ -2404,7 +2404,7 @@ packages:
     peerDependencies:
       '@tanstack/query-core': '>=5.0.0'
       typescript: '>=5.0.4'
-      viem: 2.21.1
+      viem: ^2.21.0
     peerDependenciesMeta:
       '@tanstack/query-core':
         optional: true
@@ -5010,7 +5010,7 @@ packages:
       '@wagmi/core': '>=2.16.3'
       react: '>=18'
       typescript: '>=5.4.0'
-      viem: 2.21.1
+      viem: ^2.21.0
       wagmi: '>=2.0.0'
     peerDependenciesMeta:
       '@tanstack/react-query':
@@ -6109,7 +6109,7 @@ packages:
       '@tanstack/react-query': '>=5.0.0'
       react: '>=18'
       typescript: '>=5.0.4'
-      viem: 2.21.1
+      viem: ^2.21.0
     peerDependenciesMeta:
       typescript:
         optional: true
